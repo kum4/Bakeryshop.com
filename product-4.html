@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あんぱん | ベーカリーショップ</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="img/logopan.png">
+
+</head>
+<body>
+  <header class="c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
+    <h1 class="c-header__logo">Bakery</h1>
+    <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+    <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+    <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+      <li class="c-header__list-item">
+        <a href="index.html#about" class="c-header__list-link">About</a>
+      </li>
+      <li class="c-header__list-item">
+        <a href="index.html#service" class="c-header__list-link">Service</a>
+      </li>
+      <li class="c-header__list-item">
+        <a href="index.html#product" class="c-header__list-link">Product</a>
+      </li>
+      <li class="c-header__list-item">
+        <a href="index.html#contact" class="c-header__list-link">Contact</a>
+      </li>
+    </ul>
+    <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+      <span class="c-hamburger-menu__button-mark"></span>
+      <span class="c-hamburger-menu__button-mark"></span>
+      <span class="c-hamburger-menu__button-mark"></span>
+    </label>
+  </header>
+    <main>
+      <div class="container">
+<div class="pan">
+        <img src="img/ツイストドーナツ.jpg"  alt="ツイストドーナツ">
+        </div>
+        <h2>ツイストドーナツ&nbsp;138円(税込み)</h2>
+        <h3>しっとりとした味わいが特長のツイストドーナツ！</h3>
+        <p>
+          ねじれた幸福、ツイストドーナツ。まるで夢のようなふんわり食感と、甘さと塩気の絶妙なバランス。一口噛んだ瞬間、口の中に広がる幸せな味わいは、心を癒し、笑顔を運んでくれます。朝食やティータイムのお供にぴったりの、特別なご褒美スイーツ。今日も一日、心と胃袋を喜ばせるために、ツイストドーナツをお楽しみください！
+        </p>
+        <a class="btn buy" href="#">購入する</a>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="img/titlepan.png" alt="ロゴ">
+        </div>
+        <div class="sns-container">
+            <a href=""><img src="img/line-icon.png" alt="line" class="icon-line"></a>
+            <a href=""><img src="img/insta-icon.png" alt="instagram" class="icon-instagram"></a>
+            </div>
+      <div class="small">
+        <p class="copyright"><small>(c) Bakery.com</small></p>
+      </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

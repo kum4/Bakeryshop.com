@@ -1,0 +1,296 @@
+/* 共通 */
+body {
+  margin: 0;
+  background-color: #f4941630;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  letter-spacing: 2px;
+  line-height: 1.7;
+}
+
+/* ヘッダー */
+.c-header__logo h1 {
+  font-style: italic;
+}
+
+.c-header {
+  align-items: center;
+  background-color: rgba(75, 55, 55, 0.9);
+  /* カスタマイズしてください */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  /* カスタマイズしてください */
+  width: 100%;
+}
+
+.c-header__logo {
+  color: #fff;
+  /* カスタマイズしてください */
+  min-width: 80px;
+  /* カスタマイズしてください */
+  text-decoration: none;
+}
+
+.c-header__list {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.c-header__list-item {
+  list-style: none;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.c-header__list-link {
+  color: #fff;
+  /* カスタマイズしてください */
+  display: block;
+  margin-right: 20px;
+  /* カスタマイズしてください */
+  text-decoration: none;
+  padding: 10px 0px;
+  /* カスタマイズしてください */
+}
+
+.c-header__list-link:hover {
+  filter: opacity(0.6);
+  /* カスタマイズしてください */
+}
+
+.c-hamburger-menu {
+  position: relative;
+}
+
+@media screen and (max-width: 670px) {
+  .c-hamburger-menu__list {
+    background-color: rgba(75, 55, 55, 0.9);
+    /* カスタマイズしてください */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    padding: 2rem;
+    /* カスタマイズしてください */
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    /* カスタマイズしてください */
+    top: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  #hamburger:checked~.c-hamburger-menu__list {
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+}
+
+.c-hamburger-menu__input {
+  display: none;
+}
+
+.c-hamburger-menu__bg {
+  background-color: #fff;
+  /* カスタマイズしてください */
+  cursor: pointer;
+  display: none;
+  height: 100vh;
+  left: 0;
+  opacity: 0.4;
+  /* カスタマイズしてください */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#hamburger:checked~.c-hamburger-menu__bg {
+  display: block;
+}
+
+.c-hamburger-menu__button {
+  display: none;
+}
+
+/* Bakeryについて */
+#slideshow {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.visible {
+  opacity: 1;
+}
+
+#slideshow img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.main-about {
+  text-align: center;
+}
+
+.main-about h1 {
+  text-align: center;
+  color: rgba(43, 33, 33, 0.9);
+  padding: 0 0 50px;
+}
+
+.main-about p {
+  text-align: left;
+  color: rgba(43, 33, 33, 0.8);
+}
+
+/* 施設 */
+.contents {
+  text-align: center;
+  padding: 100px 0 100px;
+  display: inline-block;
+}
+
+.content {
+  float: left;
+  width: 33%;
+  padding: 100px 30px;
+}
+
+.content img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.content h2 {
+  border-top: 2px solid rgba(75, 55, 55, 0.9);
+  padding: 30px 0 20px;
+  color: rgba(43, 33, 33, 0.9);
+}
+
+.content p {
+  color: rgba(43, 33, 33, 0.8);
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.detail {
+  background-color: rgba(244, 65, 5, 0.6);
+  padding: 10px;
+  box-shadow: 0 7px rgba(244, 65, 5, 0.8);
+  color: #fff;
+}
+
+.detail:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* おすすめ商品 */
+.recommend {
+  text-align: center;
+  background-color: #fff;
+}
+
+.recommend h2 {
+  color: tomato;
+  padding-top: 80px;
+}
+
+.products {
+  text-align: center;
+  padding: 20px 0 50px;
+  display: inline-block;
+}
+
+.product {
+  float: left;
+  width: 33%;
+}
+
+.product img {
+  height: 150px;
+  border-radius: 6px;
+}
+
+.product h3 {
+  color: rgba(43, 33, 33, 0.9);
+}
+
+.product p {
+  color: rgba(43, 33, 33, 0.8);
+}
+
+/* お問い合わせ */
+.contact {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact h2 {
+  color: rgba(43, 33, 33, 0.9);
+}
+
+.contact p {
+  color: rgba(43, 33, 33, 0.8);
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: rgba(75, 55, 55, 0.9);
+  padding-top: 10px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 30px;
+  padding-top: 3px;
+}
+
+.sns-container img {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+}
+
+.small {
+  color: #fff;
+  padding-bottom: 2px;
+}

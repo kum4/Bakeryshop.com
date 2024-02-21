@@ -1,0 +1,125 @@
+/* 共通 */
+body {
+  margin: 0;
+  background-color: #f4941630;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  letter-spacing: 2px;
+  line-height: 1.7;
+}
+
+/* ヘッダー */
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(75, 55, 55, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+  line-height: 80px;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(75, 55, 55, 0.5);
+  transition: all 0.5s;
+  padding: 0 20px;
+}
+
+.header-right:hover {
+  background-color: rgba(75, 55, 55, 0.3);
+}
+
+.header-right a {
+  margin-right: 20px;
+  color: #fff;
+  line-height: 80px;
+  font-style: italic;
+}
+
+/* パン */
+.pan img {
+  margin: 100px 0 50px;
+  width: 60%;
+  border-radius: 6px;
+}
+
+.container h2 {
+  color: rgba(75, 55, 55, 0.9);
+  border-top: 2px solid rgba(75, 55, 55, 0.9);
+  padding-top: 20px;
+}
+
+.container h3 {
+  color: rgba(75, 55, 55, 0.9)
+}
+
+.container p {
+  padding: 10px 0 20px;
+  text-align: left;
+}
+
+
+.buy {
+  background-color: rgba(244, 65, 5, 0.6);
+  padding: 10px 20px;
+  box-shadow: 0 5px rgba(244, 65, 5, 0.8);
+  color: #fff;
+}
+
+.buy:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: rgba(75, 55, 55, 0.9);
+  padding-top: 10px;
+  margin-top: 100px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 30px;
+  padding-top: 3px;
+}
+
+.sns-container img {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+}
+
+.small p {
+  color: #fff;
+  padding-bottom: 2px;
+  text-align: center;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="img/logopan.png">
+  <title>Bakery</title>
+</head>
+<body>
+  <header class="c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
+    <h1 class="c-header__logo">Bakery</h1>
+    <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+    <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+    <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+      <li class="c-header__list-item">
+        <a href="#about" class="c-header__list-link">About</a>
+      </li>
+      <li class="c-header__list-item">
+        <a href="#service" class="c-header__list-link">Service</a>
+      </li>
+      <li class="c-header__list-item">
+        <a href="#product" class="c-header__list-link">Product</a>
+      </li>
+      <li class="c-header__list-item">
+        <a href="#contact" class="c-header__list-link">Contact</a>
+      </li>
+    </ul>
+    <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+      <span class="c-hamburger-menu__button-mark"></span>
+      <span class="c-hamburger-menu__button-mark"></span>
+      <span class="c-hamburger-menu__button-mark"></span>
+    </label>
+  </header>
+</div>
+  <main>
+    <div class="container">
+    <div id="slideshow">
+      <img class="slide visible" src="img/img.title.png" alt="画像1">
+      <img class="slide" src="img/imgpan1.jpg" alt="画像2">
+      <img class="slide" src="img/imgpan2.jpg" alt="画像3">
+    </div>
+  
+    <script>
+      let current = 0;
+      const slides = document.querySelectorAll(".slide");
+      setInterval(() => {
+        // 現在の画像を非表示にする
+        slides[current].classList.remove("visible");
+        // 次の画像に切り替える
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("visible");
+      }, 6000);
+    </script>
+    <div class="main-about">
+      <h1 id="about">―― Bakeryについて ――</h1>
+      <p>
+        当店は、街の中心部にあるアットホームな雰囲気のパン屋です。朝早くから店内は焼きたてのパンの香りで満ち溢れ、地元の人々や観光客で賑わっています。店内には、フレンチブレッド、バゲット、シナモンロール、チョコレートクロワッサンなど、様々な種類のパンが並んでいます。また、季節限定の特別なパンや焼き菓子も人気です。当店の特徴は、地元で採れた新鮮な食材を使用したパンや焼き菓子を提供していることです。店主は地元の農家や生産者と緊密な関係を築き、素材の新鮮さと品質にこだわっています。店内には、カフェスペースもあります。ここでは、店の自慢のパンや焼き菓子を購入したお客様が、店内でくつろぎながらコーヒーや紅茶と一緒に味わうことができます。当店は、地元のコミュニティに愛されるパン屋として知られており、毎朝多くのお客様が新鮮なパンを求めて訪れます。また、特別なイベントや季節ごとのお祝い事に合わせて、オーダーメイドのケーキや焼き菓子も提供しています。
+
+
+      </p>
+    </div>
+    <div class="contents">
+      <div class="content" id="service">
+        <img src="img/yakitatepan.jpg" alt="焼きたてのパン">
+        <h2>焼きたてのパン</h2>
+        <p>手作りの温かさが詰まった焼きたてのパン、ふんわりとした焼きたてのパンをお楽しみください。</p>
+        <a class="btn detail" href="service-1.html">くわしく見る</a>
+      </div>
+      <div class="content">
+        <img src="img/eatspace.jpg" alt="イートイン">
+        <h2>イートイン</h2>
+        <p>香り高い焼きたてパンと、心地よいイートインスペースで至福のひとときを。</p>
+        <a class="btn detail" href="service-2.html">くわしく見る</a>
+      </div>
+      <div class="content">
+        <img src="img/sozai.jpg" alt="こだわりの素材">
+        <h2>こだわりの素材</h2>
+        <p>こだわり抜いた素材と職人の技が生み出す、絶品の味わいをご堪能ください。</p>
+        <a class="btn detail" href="service-3.html">くわしく見る</a>
+      </div>
+    </div>
+  </div>
+    <div class="recommend" id="product">
+      <h2>―― おすすめ商品 ――</h2>
+      <div class="container">
+        <div class="products">
+          <div class="product">
+            <a href="product-1.html" target="_blank">
+            <img src="img/あんぱん.jpg" alt="あんぱん">
+            <h3>あんぱん</h3>
+            <p>119(税込み)</p>
+          </div>
+          <div class="product">
+            <a href="product-2.html" target="_blank">
+            <img src="img/メロンパン.jpg" alt="メロンパン">
+            <h3>メロンパン</h3>
+            <p>158円(税込み)</p>
+          </a>
+          </div>
+          <div class="product">
+            <a href="product-3.html" target="_blank">
+            <img src="img/カレーパン.jpg" alt="カレーパン">
+            <h3>カレーパン</h3>
+            <p>122円(税込み)</p>
+          </a>
+          </div>
+          <div class="product">
+            <a href="product-4.html" target="_blank">
+            <img src="img/ツイストドーナツ.jpg" alt="ツイストドーナツ">
+            <h3>ツイストドーナツ</h3>
+            <p>138円(税込み)</p>
+          </a>
+          </div>
+          <div class="product">
+            <a href="product-5.html" target="_blank">
+            <img src="img/ジャム.jpg" alt="ジャム">
+            <h3>スプレッドセット</h3>
+            <p>1500円(税込み)</p>
+          </a>
+          </div>
+          <div class="product">
+            <a href="product-6.html" target="_blank">
+            <img src="img/syokupann.jpg" alt="食パン">
+            <h3>食パン</h3>
+            <p>225円(税込み)</p>
+          </a>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="contact" id="contact">
+    <div class="container">
+      <div class="contacts">
+        <h2>―― お問い合わせ ――</h2>
+        <p>住所:〒○○○-×××× □□□県△△△市○○-××</p>
+        <p>TEL:000-1111-2222</p>
+        <p>FAX:33-4444-5555</p>
+        <p>E-mail:○○○○○○@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="img/titlepan.png" alt="ロゴ">
+      </div>
+      <div class="sns-container">
+          <a href=""><img src="img/line-icon.png" alt="line" class="icon-line"></a>
+          <a href=""><img src="img/insta-icon.png" alt="instagram" class="icon-instagram"></a>
+          </div>
+    <div class="small">
+      <p class="copyright"><small>(c) Bakery.com</small></p>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
